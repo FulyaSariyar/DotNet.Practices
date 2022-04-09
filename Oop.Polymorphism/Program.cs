@@ -44,4 +44,15 @@ foreach (Sekil item in sekiller)
     Console.WriteLine($"Alan:{item.AlanHesapla()}");
     Console.WriteLine($"Cevre:{item.CevreHesapla()}");
 }
+/*
+ 
+ SOLID
+ 
+ 
+ S - Single Responsibility
+ O - Open-Close
+ L - Liskov substitution principle
+ I - Interface segregation principle
+ D - Dependency injection principle
+ */
 
