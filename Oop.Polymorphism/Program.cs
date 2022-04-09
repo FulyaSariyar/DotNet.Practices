@@ -23,11 +23,25 @@ Dikdörtgen dik1 = new Dikdörtgen()
 Console.WriteLine($"Dikdörtgen Cevresi:{dik1.CevreHesapla()}");
 
 Console.WriteLine($"Dikdörtgen Alanı:{dik1.AlanHesapla()}");
-
 Ucgen ucgen1 = new Ucgen()
 {
-    X = 3,
-    Z = 4
+    X = 4,
+    Y=3
 };
+
 Console.WriteLine($"Üçgenin Alanı:{ucgen1.AlanHesapla()}");
 Console.WriteLine($"Üçgenin Çevresi:{ucgen1.CevreHesapla()}");
+
+List<Sekil> sekiller=new List<Sekil>();
+
+
+sekiller.Add(kare1);
+sekiller.Add(dik1);
+sekiller.Add(ucgen1);
+
+foreach (Sekil item in sekiller)
+{
+    Console.WriteLine($"Alan:{item.AlanHesapla()}");
+    Console.WriteLine($"Cevre:{item.CevreHesapla()}");
+}
+

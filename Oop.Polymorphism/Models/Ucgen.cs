@@ -1,17 +1,14 @@
 namespace Oop.Polymorphism.Models;
 
-public  class Ucgen:Sekil
+public  class Ucgen:Dikdörtgen
 {
-    public double Z { get; set; }
     public override double AlanHesapla()
     {
-        return (X * Z) / 2;
+        return base.AlanHesapla() / 2;
     }
 
     public override double CevreHesapla()
     {
-        
-        double H=Math.Sqrt((X * X) + (Z * Z));
-        return H + X + Z;
+        return Math.Sqrt(Math.Pow(X, 2) + Math.Pow(Y, 2))+X+Y;
     }
 }
