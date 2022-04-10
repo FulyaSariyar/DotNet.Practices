@@ -1,6 +1,6 @@
 using DependencyInjectionAndLoouseCoupling.Models;
 
-namespace DependencyInjectionAndLoouseCoupling.Services;
+namespace DependencyInjectionAndLoouseCoupling.Services.SmsService;
 
 public class LogiSmsService
 {
