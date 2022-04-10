@@ -3,6 +3,12 @@ namespace Oop.Polymorphism.Models;
 public abstract class Sekil
 {
     public double X { get; set; }
+    public DateTime CreatedDate { get; set; }
+
+    public Sekil()
+    {
+            this.CreatedDate=DateTime.Now;
+    }
 
     public virtual double AlanHesapla()
     {
