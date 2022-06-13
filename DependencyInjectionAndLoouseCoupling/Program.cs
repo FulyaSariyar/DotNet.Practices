@@ -1,12 +1,11 @@
-﻿using DependencyInjectionAndLoouseCoupling.Models;
-using DependencyInjectionAndLoouseCoupling.Services;
+﻿using DependencyInjectionAndLoouseCoupling.Services.EmailService;
 using DependencyInjectionAndLoouseCoupling.Services.SmsService;
-using Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns;
 
 var builder = WebApplication.CreateBuilder(args);
 
 //Built-in IoC Container
-builder.Services.AddScoped<ISmsService,SmsService>();
+builder.Services.AddScoped<ISmsService, SmsService>();
+builder.Services.AddTransient<IMailService, SmtpMailService>();
 builder.Services.AddControllersWithViews();
 
 
